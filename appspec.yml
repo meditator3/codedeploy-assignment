@@ -8,6 +8,11 @@ hooks:
     - location: scripts/install_dependencies
       timeout: 300
       runas: ec2-user
+  AfterInstall:
+    - location: scripts/configure_nginx
+      timeout: 300
+      runas: ec2-user   
+  ApplicationStart:    
     - location: scripts/start_server
       timeout: 300
       runas: ec2-user
@@ -15,3 +20,7 @@ hooks:
     - location: scripts/stop_server
       timeout: 300
       runas: ec2-user
+  ValidateService:
+    - location: scripts/health_check
+      timeout: 60
+      runas: ec2-user  
