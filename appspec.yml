@@ -4,10 +4,7 @@ files:
   - source: /
     destination: /usr/share/nginx/html/
 hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: ec2-user
+ 
   AfterInstall:
     - location: scripts/configure_nginx
       timeout: 300
