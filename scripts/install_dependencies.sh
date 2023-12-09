@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-apt-get update
-apt-get install -y docker.io
+yum update
+yum install -y docker.io
