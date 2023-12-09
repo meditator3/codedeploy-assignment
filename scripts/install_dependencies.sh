@@ -2,4 +2,4 @@
 
 
 yum update
-yum install -y docker.io
+yum install -y docker
