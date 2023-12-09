@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sleep 20 && curl localhost:8080
+sleep 20 && curl localhost:8081
